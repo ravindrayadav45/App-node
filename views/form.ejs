@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Personal Details Form</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Personal Details Form</h2>
+    <form action="/submit-form" method="POST">
+      <label for="first-name">First Name</label>
+      <input type="text" id="first-name" name="firstName" required>
+
+      <label for="last-name">Last Name</label>
+      <input type="text" id="last-name" name="lastName" required>
+
+      <label for="phone-no">Phone Number</label>
+      <input type="tel" id="phone-no" name="phoneNo" required pattern="[0-9]{10}">
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="father-name">Father's Name</label>
+      <input type="text" id="father-name" name="fatherName" required>
+
+      <label for="mother-name">Mother's Name</label>
+      <input type="text" id="mother-name" name="motherName" required>
+
+      <label for="address">Address</label>
+      <textarea id="address" name="address" required></textarea>
+
+      <button type="submit" onclick="alert('Form submitted')">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
