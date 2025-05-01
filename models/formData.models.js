@@ -1,4 +1,4 @@
-const mongoose = require('mongoose')
+import mongoose from "mongoose"
 
 const formSchema = mongoose.Schema({
   firstName:{
@@ -25,4 +25,4 @@ const formSchema = mongoose.Schema({
   }
 })
 const formData = mongoose.model('formData',formSchema)
-module.exports = formData
+export default formData
