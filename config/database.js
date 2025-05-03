@@ -5,9 +5,9 @@ dotenv.config()
  export const FormDB =()=>{
   mongoose.connect(process.env.MONGO_URL,{
    useNewUrlParser:true,
-   ssl:true,
+   useUniedTopology:true
    tls:true,
-   tlsAllowInvalidCertificates:false
+   
    
   }).then(()=>{
   console.log('Database Connected')
