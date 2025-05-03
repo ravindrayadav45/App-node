@@ -3,7 +3,7 @@ const app = express()
 import FormRoutes from "./routes/form.routes.js"
 import { FormDB } from "./config/database.js"
 
-const PORT = process.env.PORT
+
 
 
 //database
@@ -20,7 +20,7 @@ app.use(express.json())
 app.use("/",FormRoutes)
 
 
-
+const PORT = process.env.PORT  ||5000;
 app.listen(PORT,()=>{
   console.log(`server listening on port ${PORT} `)
 })
