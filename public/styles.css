@@ -65,3 +65,7 @@ button {
 button:hover {
   background-color: #005fa3;
 }
+.form-container {
+  max-width: 420px;
+ 
+}
